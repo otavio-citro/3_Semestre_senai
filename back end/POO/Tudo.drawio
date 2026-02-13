@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.7">
+  <diagram name="Página-1" id="3QFC_AR4TVo6Sf3oMW8x">
+    <mxGraphModel dx="868" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T5LY8IgliQJlwNIopCHL-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;pessoa&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+nome&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+idade&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-documento&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+apresentar()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+mostrarDocumento&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="160" x="116" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="T5LY8IgliQJlwNIopCHL-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Bruxo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;nome&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;idade&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;feitico&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;nivel magia&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-nivel energia&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+verEnergia()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;recarregarEnergia()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="180" width="160" x="352" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Grifinoria&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+casa&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+feiticoAssinatura()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="142" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-2" edge="1" parent="1" source="bViWtuNggFUAt4tgfowx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.883;entryDx=0;entryDy=0;entryPerimeter=0;" target="T5LY8IgliQJlwNIopCHL-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sonserina&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+casa&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+feiticoAssinatura()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="552" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-4" edge="1" parent="1" source="bViWtuNggFUAt4tgfowx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.025;entryY=0.883;entryDx=0;entryDy=0;entryPerimeter=0;" target="T5LY8IgliQJlwNIopCHL-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="532" y="410" />
+              <mxPoint x="532" y="345" />
+              <mxPoint x="552" y="345" />
+              <mxPoint x="552" y="299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-6" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;antiheroi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+nome&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+idade&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-poder&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;apresentar()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;mostrarPoder()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="172" x="340" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DC&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+nome&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-poder&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+roupa&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;apresentar()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="172" x="168" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-8" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Marvel&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+nome&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-poder&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+roupa&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;apresentar()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="172" x="512" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-9" edge="1" parent="1" source="bViWtuNggFUAt4tgfowx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.004;entryY=0.815;entryDx=0;entryDy=0;entryPerimeter=0;" target="bViWtuNggFUAt4tgfowx-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bViWtuNggFUAt4tgfowx-11" edge="1" parent="1" source="bViWtuNggFUAt4tgfowx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.824;entryDx=0;entryDy=0;entryPerimeter=0;" target="bViWtuNggFUAt4tgfowx-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
