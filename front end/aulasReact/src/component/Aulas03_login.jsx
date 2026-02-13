@@ -1,18 +1,33 @@
+import { useState } from 'react'
 
 
 const Aula03_Login = () => {
+
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+    const [menssagem, setMenssagem] = useState('')
+
+    function verificar (){
+        if (email == 'senai@senai.br' && senha == '123') {
+           setMenssagem('entrou com sucesso')
+        } else {
+           setMenssagem('email ou senai invalidos')
+        }
+    }
+
     return (
         <div style={estilos.loginConteudo}>
             <h1><img src="https://d2k0cnxtow3qpj.cloudfront.net/arqs/sesisp/ups/SESI-SENAI-COR-sp-preto-1-.png" alt="" style={estilos.logo} /> Login</h1>
             <div style={estilos.divSegundaria}>
                 <label htmlFor="" style={estilos.tituloIn}>Email</label>
-                <input type="email" placeholder='Digite seu email' style={estilos.input} />
+                <input type="email" placeholder='Digite seu email' style={estilos.input} onChange={(event) => setEmail(event.target.value)} value={email} />
             </div>
             <div style={estilos.divSegundaria}>
                 <label htmlFor="" style={estilos.tituloIn}>Senha</label>
-                <input type="text" placeholder='Digite seu Senha' style={estilos.input} />
+                <input type="text" placeholder='Digite seu Senha' style={estilos.input} onChange={(event) => setSenha(event.target.value)} value={senha} />
             </div>
-            <button style={estilos.button}>Entrar</button>
+            <button style={estilos.button} onClick={verificar}>Entrar</button>
+            <p>{menssagem}</p>
         </div>
     )
 }

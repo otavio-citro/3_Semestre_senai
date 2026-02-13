@@ -1,48 +1,48 @@
-import Livro from "../models/livro.js";
+import jogador from "../models/jogador.js";
 
-//vetor de objeto de livros
+//vetor de objeto de jogador
 
-let listaLivro = [
-    new Livro(1, "O Alienista", "Machado de Assis", 95),
-    new Livro(2, "Dom Casmurro", "Machado de Assis", 288),
-    new Livro(3, "harry potter e a pedra filosofal", "J.K. Rowling", 300),
+let listajogador = [
+    new jogador(1, "algusto", "Machado de Assis", 95),
+    new jogador(2, "marcelo", "Machado de Assis", 288),
+    new jogador(3, "harry potter", "J.K. Rowling", 300),
 ]
 
-const livroController = {
+const jogadorController = {
 listar: (req, res) => {
-    res.render('livros.ejs', {livros: listaLivro})
+    res.render('jogador.ejs', {jogador: listajogador})
 },
 adicionar: (req,res) => {
-    const {titulo, autor, paginas } = req.body;
+    const {nome, pontuacao, nivel } = req.body;
 
     try {
-        //contrução de um novo objeto, utilizando a classe livro
-        const novoLivro = new Livro(
-            listaLivro.length + 1,
-            titulo,
-            autor,
-            Number(paginas)
+        //contrução de um novo objeto, utilizando a classe jogador
+        const novojogador = new jogador(
+            listajogador.length + 1,
+            nome,
+            Number(pontuacao),
+            Number(nivel)
 
         )
-        console.log(novoLivro);
+        console.log(novojogador);
         
-        listaLivro.push(novoLivro);
-        res.redirect('/livros')
+        listajogador.push(novojogador);
+        res.redirect('/jogador')
     } catch (e) {
-        res.status(400).render('livros.ejs', {lista: listaLivro, erro: e.message})
+        res.status(400).render('jogador.ejs', {lista: listajogador, erro: e.message})
     }
 
 },
 //Confirmando a leitura
-marcarComoLido: (req, res) =>{
+adicionarPonto: (req, res) =>{
     const {id} = req.body;
-    const livro = listaLivro.find(l => l.id === Number(id))
-    livro.marcarComoLido();
-    res.redirect('/livros')
+    const jogador = listajogador.find(l => l.id === Number(id))
+    jogador.adicionarPonto();
+    res.redirect('/jogador')
 }
 
 }
 
 
 
-export default livroController;
+export default jogadorController
