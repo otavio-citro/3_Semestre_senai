@@ -145,9 +145,9 @@
 <body>
     <div class="wrap">
         <div class="card">
-            <h1>Lista de leitura</h1>
-            <!-- Listando livros -->
-            <% livros.forEach(l=> { %>
+            <h1>Lista de jogadores</h1>
+            <!-- Listando jogador -->
+            <% jogadores.forEach(l=> { %>
                 <div class="item">
                     <div>
                         <strong>
@@ -165,10 +165,10 @@
                     </div>
               
                 <div class="actions">
-                    <form action="/livros/marcar-lido" method="post" style="display: inline;">
+                    <form action="/jogador/adicionarPonto" method="post" style="display: inline;">
                         <input type="hidden" name="id" value="<%= l.id %>" />
                         <button class="warning" <%= l.lido ? 'disabled' : '' %>>
-                            <%= l.lido ? 'Já Lido' : 'Marcar como lido' %>
+                           + 50
                         </button>
                     </form>
                 </div>
@@ -176,14 +176,14 @@
                   <% }) %>
         </div>
 
-                <!--Codigo de adicionar  livros  -->
-                      <!-- //Adicionando livros -->
+                <!--Codigo de adicionar  jogador  -->
+                      <!-- //Adicionando jogador -->
 
-      <h2 style="text-align:center; margin: 8px 0 12px;">Adicionar Livro</h2>
-      <form action="/livros" method="POST" class="row">
-        <input type="text" name="titulo" placeholder="Título" required />
-        <input type="text" name="autor" placeholder="Autor" required />
-        <input type="number" name="paginas" placeholder="Páginas" min="1" required />
+      <h2 style="text-align:center; margin: 8px 0 12px;">Adicionar jogador</h2>
+      <form action="/jogador" method="POST" class="row">
+        <input type="text" name="nome" placeholder="nome" required />
+        <input type="number" name="nivel" placeholder="nivel" required />
+        <input type="number" name="pontuacao" placeholder="pontuação" min="1" required />
         <button type="submit">Adicionar</button>
       </form>
         </div>

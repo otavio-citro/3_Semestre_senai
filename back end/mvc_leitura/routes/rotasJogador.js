@@ -1,15 +1,15 @@
 import express from 'express';
-import jogadorController from '../controllers/jogadorController';
+import JogadorController from '../controllers/jogadorController.js';
 
 const router = express.Router()
 
-router.get('/jogador', livroController.listar)
+router.get('/jogador', JogadorController.listar)
 
 //rota para adicionar jogador
 
-router.post('/jogador', livroController.adicionar)
+router.post('/jogador', JogadorController.adicionar)
 
 
-router.post('/jogador/adicionarPonto', livroController.adicionarPonto)
+router.post('/jogador/adicionarPonto', JogadorController.adicionarPonto)
 
 export default router

@@ -21,11 +21,11 @@ app.get('/', (req, res) =>{
     res.redirect('/livros');
 });
 
-app.use(rotasJogador)
 
 app.get('/', (req, res) =>{
     res.redirect('/jogador');
 });
+app.use(rotasJogador)
 
 const porta = 3000;
 app.listen(porta, () =>{

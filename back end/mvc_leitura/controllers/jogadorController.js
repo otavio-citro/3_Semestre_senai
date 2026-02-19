@@ -8,12 +8,12 @@ let listajogador = [
     new jogador(3, "harry potter", "J.K. Rowling", 300),
 ]
 
-const jogadorController = {
+const JogadorController = {
 listar: (req, res) => {
-    res.render('jogador.ejs', {jogador: listajogador})
+    res.render('jogador.ejs', {jogadores: listajogador})
 },
 adicionar: (req,res) => {
-    const {nome, pontuacao, nivel } = req.body;
+    const {nome, pontuacao,} = req.body;
 
     try {
         //contrução de um novo objeto, utilizando a classe jogador
@@ -21,7 +21,7 @@ adicionar: (req,res) => {
             listajogador.length + 1,
             nome,
             Number(pontuacao),
-            Number(nivel)
+            
 
         )
         console.log(novojogador);
@@ -37,7 +37,7 @@ adicionar: (req,res) => {
 adicionarPonto: (req, res) =>{
     const {id} = req.body;
     const jogador = listajogador.find(l => l.id === Number(id))
-    jogador.adicionarPonto();
+    jogador.adicionarPontos();
     res.redirect('/jogador')
 }
 
@@ -45,4 +45,4 @@ adicionarPonto: (req, res) =>{
 
 
 
-export default jogadorController
+export default JogadorController

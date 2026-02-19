@@ -1,5 +1,5 @@
-class Livro {
-    constructor(id, nome, pontuacao, nivel) {
+class Jogador {
+    constructor(id, nome, pontuacao) {
         
         if (!nome || !pontuacao) {
             throw new Error("nome ou pontuacao sao obrigatorios");
@@ -7,22 +7,25 @@ class Livro {
         }
         this.id = id;
         this.nome = nome;
-        this.pontuacao = pontuacao;
-        this.nivel = nivel;
+        this.pontuacao = Number(pontuacao = 0);
+       
        
 
         
     }
     descricao(){
-        return `${this.nome - this.pontuacao}`
+        return `${this.nome} -  ${this.pontuacao}`
     }
 
     verificarTamanho(){
-        if (this.nivel >= 150) return 'nivel medio';
-        if (this.nivel >= 300) return 'nivel alto';
-        return 'nivel baixo'
+        if (this.pontuacao <= 150) return 'iniciante';
+        if (this.pontuacao <= 300) return 'intermediario';
+        return 'avançado'
+    }
+    adicionarPontos(){
+        this.pontuacao += 50;
     }
     
 }
 
-export default Livro
+export default Jogador

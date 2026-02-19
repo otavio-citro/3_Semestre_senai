@@ -1,8 +1,8 @@
 class Livro {
-    constructor(id, titulo, autor, paginas) {
+    constructor(id,titulo, autor, paginas) {
         if (!titulo || !autor) {
             throw new Error("titulo ou autor sao obrigatorios");
-            
+
         }
         this.id = id;
         this.titulo = titulo;
@@ -10,18 +10,18 @@ class Livro {
         this.paginas = paginas;
         this.lido = false;
 
-        
+
     }
-    descricao(){
-        return `${this.titulo - this.autor}`
+    descricao() {
+        return `${this.titulo} - ${this.autor}`
     }
 
-    verificarTamanho(){
+    verificarTamanho() {
         if (this.paginas <= 150) return 'Leitura curta';
         if (this.paginas <= 300) return 'Leitura media';
         return 'leitura longa'
     }
-    marcarComoLido(){
+    marcarComoLido() {
         this.lido = true;
     }
 }
