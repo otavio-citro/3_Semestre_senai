@@ -6,7 +6,7 @@ const router = Router();
 
 //criando o entpoint para listar todos os usuarios
 router.get('/usuarios', async (req, res) => {
-    try {
+    try { 
         //cria uma variavel para enviar o comando sql
         const query = `SELECT * FROM usuarios ORDER BY id_usuario`
         //cria uma variavel para reveber o retorno no sql
