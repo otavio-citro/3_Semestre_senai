@@ -11,7 +11,7 @@ const Aula07 = () => {
             <MeucomponenteNomeado/>
             <p>{endereçoServidor}</p>
             <hr />
-            <Aula07_Perfil/>
+            <Aula07_Perfil foto={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCEgWVVJ0Q0Ow4rj-gbyRQSThtTjEcdbYl1rOEmVWkd5x40eu3YqeZ5uibwQv1QqZ3s1e8XZtNLwmd9fOJOP2r8r_17oR1nyOWkboQdyg&s=10'} nome={'douglas'}/>
         </div>
     )
 }

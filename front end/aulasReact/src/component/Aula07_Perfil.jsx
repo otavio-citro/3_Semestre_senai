@@ -3,11 +3,11 @@ import { estilos } from "../Style/estilos"
 
 
 
-const Aula07_Perfil = () => {
+const Aula07_Perfil = ({ foto, nome }) => {
     return (
         <div style={estilao.fundo}>
-            <Imagem />
-            <InfoUsuario />
+            <Imagem foto={foto} />
+            <InfoUsuario nome={nome} />
             <BotaoSeguir />
 
         </div>
@@ -15,22 +15,25 @@ const Aula07_Perfil = () => {
 }
 
 
-export const Imagem = () => {
+export const Imagem = ({ foto }) => {
     return (
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCEgWVVJ0Q0Ow4rj-gbyRQSThtTjEcdbYl1rOEmVWkd5x40eu3YqeZ5uibwQv1QqZ3s1e8XZtNLwmd9fOJOP2r8r_17oR1nyOWkboQdyg&s=10" alt="" style={estilao.imagem}/>
+        <img src={foto} alt="" style={estilao.imagem} />
     )
 }
 
-export const InfoUsuario = () => {
+export const InfoUsuario = ({ nome }) => {
     return (
-        <p>cleiton</p>
+        <p style={estilao.h2}>{nome}</p>
     )
 }
 export const BotaoSeguir = () => {
     const [visivel, setVisivel] = useState(false)
 
     return (
-        <button onClick={() => setVisivel(!visivel)}>
+        <button onClick={() => setVisivel(!visivel)} style={{
+            ...estilao.botao,
+            backgroundColor: visivel ? '#ff0000' : '#3cff00'
+        }}>
             {visivel == false ? <p>seguir</p> : <p>deixar de seguir</p>}
         </button>
     )
@@ -40,17 +43,42 @@ export const BotaoSeguir = () => {
 const estilao = {
     imagem: {
         borderRadius: 50,
-        height: 50,
-        width:50
+       
+        width: 70,
+        height: 70
     },
     fundo: {
         backgroundColor: 'white',
         padding: 16,
         borderRadius: 8,
-        width: '100px',
+        width: '150px',
         boxShadow: '0px 4px 6px rgba(0,0,0,0.1)',
-        textAlign: 'center'
+        textAlign: 'center',
+        margin: '0 auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 10,
+        border: '1px solid #fff'
+
+
+    },
+    botao: {
+
+        borderRadius: 5,
+        border: 'none',
+        minWidth: 50,
+        minHeight: 25,
+        boxShadow: '0px 4px 10px rgba(0,0,0,0.2)',
+        color: '#fff',
+        padding: 3
+    },
+    h2: {
+        fontSize: 15,
+
+
     }
+
 }
 
 
