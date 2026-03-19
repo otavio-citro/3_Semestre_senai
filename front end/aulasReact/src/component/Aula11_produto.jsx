@@ -9,7 +9,7 @@ const Aula11_card = ({ produto }) => {
             <p>{produto.categoria}</p>
             {/* {produto.frete == true ? <p>frete Gratis</p>: null} */}
             {produto.frete == true && <p>frete Gratis</p>}
-            <a href={produto.linkProduto} style={estilos.botao}>ver produto</a>
+            <a href={produto.linkProduto} style={estilos.botao} target="blank">ver produto</a>
         </div>
     )
 }
@@ -18,7 +18,9 @@ const estilos = {
     cardProduto: {
         border: "1px solid #ccc",
         padding: 10,
-        width: 250
+        width: 250,
+        textAlign: "center"
+
     },
 
 
@@ -51,7 +53,7 @@ const estilos = {
         padding: "8px 12px",
         borderRadius: 5,
         marginTop: 10,
-        fontWeight: "bold"
+        fontWeight: "bold",
     },
 
 
